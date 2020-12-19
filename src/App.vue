@@ -1,31 +1,21 @@
 <template>
   <div>
-    <h1>{{ title }}</h1>
-    <h2>{{ count }}</h2>
-    <button @click="onClickAdd">Add</button>
-    <hr>
-    <h1>V-model</h1>
-    <input type="text" v-model="msg" />
-    <div>{{ msg }}</div>
-    <button @click="msg=''">Reset</button>
+    <ul>
+      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/ClickAndVModel">ClickAndVModel</router-link></li>
+    </ul>
+    
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      title: "Click Event And V-model",
-      count: 0,
-      msg:""
-    };
-  },
-  methods: {
-    onClickAdd() {
-      this.count = this.count + 1;
-    },
-  },
-};
+
 </script>
 
-<style></style>
+<style>
+ul li {
+  display:inline;
+  padding-right: 5px;
+}
+</style>
