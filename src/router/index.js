@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import EventAndMethode from '../views/EventAndMethode.vue'
 import Data from '../views/Data.vue'
+import Computed from '../views/Computed.vue'
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/Data',
     name: 'Data',
     component: Data
+  },
+  {
+    path: '/Computed',
+    name: 'Computed',
+    component: Computed
   },
   
 ]
