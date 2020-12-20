@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import VModel from '../views/VModel.vue'
 import EventAndMethode from '../views/EventAndMethode.vue'
+import Data from '../views/Data.vue'
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/EventAndMethode',
     name: 'EventAndMethode',
     component: EventAndMethode
+  },
+  {
+    path: '/Data',
+    name: 'Data',
+    component: Data
   },
   
 ]
