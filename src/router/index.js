@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import ClickAndVModel from '../views/ClickAndVModel.vue'
+import VModel from '../views/VModel.vue'
 
 const routes = [
   {
@@ -9,9 +9,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/ClickAndVModel',
-    name: 'ClickAndVModel',
-    component: ClickAndVModel
+    path: '/VModel',
+    name: 'VModel',
+    component: VModel
   },
   
 ]
