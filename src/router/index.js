@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import EventAndMethode from '../views/EventAndMethode.vue'
 import Data from '../views/Data.vue'
 import Computed from '../views/Computed.vue'
+import Binding from '../views/Binding.vue'
 
 const routes = [
   {
@@ -11,19 +12,24 @@ const routes = [
     component: Home
   },
   {
-    path: '/EventAndMethode',
+    path: '/eventAndMethode',
     name: 'EventAndMethode',
     component: EventAndMethode
   },
   {
-    path: '/Data',
+    path: '/data',
     name: 'Data',
     component: Data
   },
   {
-    path: '/Computed',
+    path: '/computed',
     name: 'Computed',
     component: Computed
+  },
+  {
+    path: '/binding',
+    name: 'Binding',
+    component: Binding
   },
   
 ]
