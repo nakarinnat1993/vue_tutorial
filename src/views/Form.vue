@@ -4,11 +4,15 @@
     <form v-on:submit.prevent="submit">
       <div>
         <label for="first_name">First name</label>
-        <input type="text" name="first_name" v-model="applicant.first_name" />
+        <input type="text" name="first_name" v-model.trim="applicant.first_name" />
       </div>
       <div>
         <label for="last_name">Last name</label>
-        <input type="text" name="last_name" v-model="applicant.last_name" />
+        <input type="text" name="last_name" v-model.lazy="applicant.last_name" />
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" v-model.number="applicant.age" />
       </div>
 
       <div>
@@ -27,7 +31,7 @@
           <option value="Vue">Vue</option>
         </select>
       </div>
-      <button type="button" @click="clear">Clear</button>
+      <button type="button" @click.exact="clear" @click.alt="useDefault">Clear</button>
       <button type="submit">Submit</button>
     </form>
     <p>#Spy {{ JSON.stringify(applicant) }}</p>
@@ -42,6 +46,7 @@ export default {
       applicant: {
         first_name: "",
         last_name: "",
+        age: 0,
         sex: "male",
         course: "Vue",
       },
@@ -52,6 +57,16 @@ export default {
       this.applicant = {
         first_name: "",
         last_name: "",
+        age: 0,
+        sex: "male",
+        course: "Vue",
+      };
+    },
+    useDefault() {
+      this.applicant = {
+        first_name: "Nakarin",
+        last_name: "Jaiseengam",
+        age: 27,
         sex: "male",
         course: "Vue",
       };
