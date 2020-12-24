@@ -1,5 +1,6 @@
 <template>
   <div class="event-methode">
+    <h1>Event And Methode</h1>
     <button v-on:click="clickMe">ClickMe</button>
     <button v-on:click="PassParameter('Welcome')">Pass Parameter</button>
     <button @click="PassParameter('Short Form')">Short Form</button>

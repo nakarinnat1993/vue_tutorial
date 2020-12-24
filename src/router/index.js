@@ -4,6 +4,7 @@ import EventAndMethode from '../views/EventAndMethode.vue'
 import Data from '../views/Data.vue'
 import Computed from '../views/Computed.vue'
 import Binding from '../views/Binding.vue'
+import Form from '../views/Form.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/binding',
     name: 'Binding',
     component: Binding
+  },
+  {
+    path: '/form',
+    name: 'Form',
+    component: Form
   },
   
 ]

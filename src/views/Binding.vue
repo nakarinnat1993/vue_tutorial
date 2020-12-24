@@ -1,5 +1,6 @@
 <template>
   <div class="binding">
+    <h1>Binding</h1>
     <br />
     <img v-bind:src="imageUrl" v-bind:width="imageWidth" />
     <br />
