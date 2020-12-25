@@ -5,9 +5,7 @@
         <router-link to="/"><button>Home</button></router-link>
       </li>
       <li>
-        <router-link to="/eventAndMethode"
-          ><button>Event & Method</button></router-link
-        >
+        <router-link to="/eventAndMethode"><button>Event & Method</button></router-link>
       </li>
       <li>
         <router-link to="/data"><button>Data & Variables</button></router-link>
