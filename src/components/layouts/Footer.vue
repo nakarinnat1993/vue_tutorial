@@ -7,6 +7,11 @@
 <script>
 export default {
     name:"Footer",
+    mounted() {
+        setInterval(()=>{
+            this.$emit("onClock1", Date())
+        },100)
+    },
     props:[
         "title",
         "color"
