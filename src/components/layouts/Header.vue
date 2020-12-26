@@ -22,6 +22,9 @@
       <li>
         <router-link to="/slot"><button>Slot</button></router-link>
       </li>
+      <li>
+        <router-link to="/condition"><button>Condition</button></router-link>
+      </li>
     </ul>
   </div>
 </template>

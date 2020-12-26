@@ -1,5 +1,6 @@
 <template>
   <div class="slot">
+    <h1>Slot</h1>
     <Clock>
       <span style="color:red">เวลา : </span>
     </Clock>
