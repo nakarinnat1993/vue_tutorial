@@ -25,6 +25,9 @@
       <li>
         <router-link to="/condition"><button>Condition</button></router-link>
       </li>
+      <li>
+        <router-link to="/loop"><button>Loop</button></router-link>
+      </li>
     </ul>
   </div>
 </template>

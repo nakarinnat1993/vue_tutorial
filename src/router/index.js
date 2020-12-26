@@ -7,6 +7,7 @@ import Binding from '../views/Binding.vue'
 import Form from '../views/Form.vue'
 import Slot from '../views/Slot.vue'
 import Condition from '../views/Condition.vue'
+import Loop from '../views/Loop.vue'
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
     path: '/condition',
     name: 'Condition',
     component: Condition
+  },
+  {
+    path: '/loop',
+    name: 'Loop',
+    component: Loop
   },
   
 ]
