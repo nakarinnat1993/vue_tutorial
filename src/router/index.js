@@ -5,6 +5,7 @@ import Data from '../views/Data.vue'
 import Computed from '../views/Computed.vue'
 import Binding from '../views/Binding.vue'
 import Form from '../views/Form.vue'
+import Slot from '../views/Slot.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/form',
     name: 'Form',
     component: Form
+  },
+  {
+    path: '/slot',
+    name: 'Slot',
+    component: Slot
   },
   
 ]

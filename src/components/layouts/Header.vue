@@ -19,6 +19,9 @@
       <li>
         <router-link to="/form"><button>Form</button></router-link>
       </li>
+      <li>
+        <router-link to="/slot"><button>Slot</button></router-link>
+      </li>
     </ul>
   </div>
 </template>
