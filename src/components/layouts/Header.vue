@@ -34,6 +34,9 @@
       <li>
         <router-link to="/state"><button>Normal Vs State variables</button></router-link>
       </li>
+      <li>
+        <router-link to="/ref"><button>Ref</button></router-link>
+      </li>
     </ul>
   </div>
 </template>

@@ -10,6 +10,7 @@ import Condition from '../views/Condition.vue'
 import Loop from '../views/Loop.vue'
 import LifecycleHooks from '../views/LifecycleHooks.vue'
 import State from '../views/VariableAndState.vue'
+import Ref from '../views/Ref.vue'
 
 const routes = [
   {
@@ -62,11 +63,15 @@ const routes = [
     name: 'LifecycleHooks',
     component: LifecycleHooks
   },
-  
   {
     path: '/state',
     name: 'State',
     component: State
+  },
+  {
+    path: '/ref',
+    name: 'Ref',
+    component: Ref
   },
   
 ]
