@@ -8,6 +8,7 @@ import Form from '../views/Form.vue'
 import Slot from '../views/Slot.vue'
 import Condition from '../views/Condition.vue'
 import Loop from '../views/Loop.vue'
+import LifecycleHooks from '../views/LifecycleHooks.vue'
 
 const routes = [
   {
@@ -54,6 +55,11 @@ const routes = [
     path: '/loop',
     name: 'Loop',
     component: Loop
+  },
+  {
+    path: '/lifecycle',
+    name: 'LifecycleHooks',
+    component: LifecycleHooks
   },
   
 ]
