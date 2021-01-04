@@ -11,6 +11,7 @@ import Loop from '../views/Loop.vue'
 import LifecycleHooks from '../views/LifecycleHooks.vue'
 import State from '../views/VariableAndState.vue'
 import Ref from '../views/Ref.vue'
+import Calculate from '../views/Calculate.vue'
 
 const routes = [
   {
@@ -72,6 +73,11 @@ const routes = [
     path: '/ref',
     name: 'Ref',
     component: Ref
+  },
+  {
+    path: '/calculate',
+    name: 'Calculate',
+    component: Calculate
   },
   
 ]
