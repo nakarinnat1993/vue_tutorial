@@ -40,12 +40,12 @@
         <td align="center">{{ item.total_price }}</td>
         <td align="center"><button @click="delCart(item)">ลบ</button></td>
       </tr>
-      <!-- <tr>
-        <td align="right" colspan="2">รวม</td>
+      <tr>
+        <td align="right" colspan="3">รวม</td>
+        <td align="center">{{ sum_qty() }}</td>
+        <td align="center">{{ sum_total_price() }}</td>
         <td align="center"></td>
-        <td align="center"></td>
-        <td align="center"></td>
-      </tr> -->
+      </tr>
     </table>
   </div>
 </template>
@@ -124,7 +124,17 @@ export default {
             console.log(index);
             this.carts.splice(index,1);
         }
-    }
+    },
+    sum_qty(){
+        let sum_qty = 0;
+        this.carts.forEach(item => sum_qty+=item.qty);
+        return sum_qty;
+    },
+    sum_total_price(){
+        let sum_total_price = 0;
+        this.carts.forEach(item => sum_total_price+=item.total_price);
+        return sum_total_price;
+    },
   },
 };
 </script>
