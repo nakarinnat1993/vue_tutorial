@@ -38,10 +38,12 @@
         <router-link to="/ref"><button>Ref</button></router-link>
       </li>
     </ul>
-    <hr>
     <ul>
       <li>
         <router-link to="/calculate"><button>Workshop : คำนวนราคา</button></router-link>
+      </li>
+      <li>
+        <router-link to="/cart"><button>Workshop : ตะกร้าสินค้า</button></router-link>
       </li>
     </ul>
   </div>

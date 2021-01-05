@@ -12,6 +12,7 @@ import LifecycleHooks from '../views/LifecycleHooks.vue'
 import State from '../views/VariableAndState.vue'
 import Ref from '../views/Ref.vue'
 import Calculate from '../views/Calculate.vue'
+import Cart from '../views/Cart.vue'
 
 const routes = [
   {
@@ -78,6 +79,11 @@ const routes = [
     path: '/calculate',
     name: 'Calculate',
     component: Calculate
+  },
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: Cart
   },
   
 ]
